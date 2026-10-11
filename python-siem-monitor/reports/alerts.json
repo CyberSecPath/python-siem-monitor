@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-10-10 08:14:03",
+    "severity": "HIGH",
+    "rule_id": "AUTH-001",
+    "rule_name": "Repeated failed logins",
+    "username": "admin",
+    "source_ip": "203.0.113.77",
+    "evidence": "5 failed login attempts from this IP in the input dataset.",
+    "recommendation": "Review nearby authentication events and validate the source and account owner."
+  },
+  {
+    "timestamp": "2026-10-10 08:15:10",
+    "severity": "HIGH",
+    "rule_id": "AUTH-002",
+    "rule_name": "Success after repeated failures",
+    "username": "admin",
+    "source_ip": "203.0.113.77",
+    "evidence": "Successful login followed 5 failed attempts from the same IP.",
+    "recommendation": "Verify whether the login was authorized and inspect surrounding events."
+  },
+  {
+    "timestamp": "2026-10-10 10:20:00",
+    "severity": "MEDIUM",
+    "rule_id": "PRIV-001",
+    "rule_name": "Privileged access event",
+    "username": "root",
+    "source_ip": "192.168.1.88",
+    "evidence": "A successful privileged-access event appears in the sample logs.",
+    "recommendation": "Confirm approval and review the privileged action and its outcome."
+  },
+  {
+    "timestamp": "2026-10-10 23:42:05",
+    "severity": "MEDIUM",
+    "rule_id": "AUTH-003",
+    "rule_name": "Login outside configured business hours",
+    "username": "m.lee",
+    "source_ip": "198.51.100.42",
+    "evidence": "Successful login at 23:42; configured window is 07:00\u201319:00.",
+    "recommendation": "Check user schedule, approved maintenance, and authentication context."
+  }
+]

@@ -1,0 +1,5 @@
+timestamp,severity,rule_id,rule_name,username,source_ip,evidence,recommendation
+2026-10-10 08:14:03,HIGH,AUTH-001,Repeated failed logins,admin,203.0.113.77,5 failed login attempts from this IP in the input dataset.,Review nearby authentication events and validate the source and account owner.
+2026-10-10 08:15:10,HIGH,AUTH-002,Success after repeated failures,admin,203.0.113.77,Successful login followed 5 failed attempts from the same IP.,Verify whether the login was authorized and inspect surrounding events.
+2026-10-10 10:20:00,MEDIUM,PRIV-001,Privileged access event,root,192.168.1.88,A successful privileged-access event appears in the sample logs.,Confirm approval and review the privileged action and its outcome.
+2026-10-10 23:42:05,MEDIUM,AUTH-003,Login outside configured business hours,m.lee,198.51.100.42,Successful login at 23:42; configured window is 07:00–19:00.,"Check user schedule, approved maintenance, and authentication context."

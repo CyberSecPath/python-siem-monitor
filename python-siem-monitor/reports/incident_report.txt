@@ -1,0 +1,37 @@
+PYTHON SIEM MONITOR — INCIDENT SUMMARY
+==========================================
+Events analyzed: 12
+Alerts generated: 4
+High severity: 2
+Medium severity: 2
+
+ALERT DETAILS
+------------------------------------------
+1. [HIGH] AUTH-001 — Repeated failed logins
+   Time: 2026-10-10 08:14:03
+   User: admin | Source IP: 203.0.113.77
+   Evidence: 5 failed login attempts from this IP in the input dataset.
+   Recommended investigation: Review nearby authentication events and validate the source and account owner.
+
+2. [HIGH] AUTH-002 — Success after repeated failures
+   Time: 2026-10-10 08:15:10
+   User: admin | Source IP: 203.0.113.77
+   Evidence: Successful login followed 5 failed attempts from the same IP.
+   Recommended investigation: Verify whether the login was authorized and inspect surrounding events.
+
+3. [MEDIUM] PRIV-001 — Privileged access event
+   Time: 2026-10-10 10:20:00
+   User: root | Source IP: 192.168.1.88
+   Evidence: A successful privileged-access event appears in the sample logs.
+   Recommended investigation: Confirm approval and review the privileged action and its outcome.
+
+4. [MEDIUM] AUTH-003 — Login outside configured business hours
+   Time: 2026-10-10 23:42:05
+   User: m.lee | Source IP: 198.51.100.42
+   Evidence: Successful login at 23:42; configured window is 07:00–19:00.
+   Recommended investigation: Check user schedule, approved maintenance, and authentication context.
+
+ANALYST NOTE
+These rule matches are leads for investigation, not proof of compromise.
+Validate identity, context, asset criticality, and adjacent telemetry before concluding.
+This lab uses synthetic data and does not connect to real systems.

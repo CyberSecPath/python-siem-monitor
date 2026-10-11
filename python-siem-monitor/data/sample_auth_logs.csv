@@ -1,0 +1,13 @@
+timestamp,username,source_ip,event_type,status,details
+2026-10-10 08:02:11,j.smith,192.168.1.24,login,success,Normal morning login
+2026-10-10 08:14:03,admin,203.0.113.77,login,failure,Invalid password
+2026-10-10 08:14:15,admin,203.0.113.77,login,failure,Invalid password
+2026-10-10 08:14:27,admin,203.0.113.77,login,failure,Invalid password
+2026-10-10 08:14:39,admin,203.0.113.77,login,failure,Invalid password
+2026-10-10 08:14:51,admin,203.0.113.77,login,failure,Invalid password
+2026-10-10 08:15:10,admin,203.0.113.77,login,success,Login succeeded after failures
+2026-10-10 23:42:05,m.lee,198.51.100.42,login,success,After-hours login
+2026-10-10 10:20:00,root,192.168.1.88,privileged_access,success,Privileged account used
+2026-10-10 11:05:00,a.jones,192.168.1.31,login,success,Normal login
+2026-10-10 11:30:00,t.brown,192.168.1.55,login,failure,Typo in password
+2026-10-10 11:30:22,t.brown,192.168.1.55,login,success,Successful retry
