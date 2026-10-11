@@ -1,4 +1,4 @@
-Python SIEM Monitor
+Python SIEM Monitor:
 A defensive cybersecurity portfolio project for authentication-log analysis, suspicious-activity detection, and incident reporting.
 
 This offline lab processes synthetic authentication events with transparent, configurable rules. It demonstrates entry-level blue-team concepts without connecting to a network or monitoring real people or systems.
